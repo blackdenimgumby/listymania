@@ -1,0 +1,90 @@
+header, footer {
+	border-bottom: 1px solid black;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+footer {
+	height: 50px;
+}
+
+main {
+	flex: auto;
+	background-color: #eee;
+}
+
+div.list_name, div.list_item_name, #list_add_new, #list_item_add_new {
+	width: 400px;
+	border: 1px solid black;
+	margin: 1em auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#top_bar {
+	display: flex; 
+	flex-direction: row; 
+	align-items: center; 
+	justify-content: space-between; 
+	border-bottom: 1px solid black;
+}
+
+div#page_name {
+	margin-bottom: 5px;
+}
+
+#logo {
+	border: 1px solid black; 
+	margin: 1em;
+}
+
+#header_content {
+	margin: auto; 
+	width: 500px; 
+	text-align: center;			
+}
+
+#subtitle {
+	border: 1px solid black; margin: 1em;			
+}
+
+#home_icon {
+	width: 30px; 
+	height: 30px; 
+	border: 1px solid black;			
+}
+
+#header_links {
+	border: 1px solid black;
+}
+
+footer {
+	text-align: center; 
+	align-items: center; 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;		
+	border-top: 1px solid black;
+}
+
+footer > div {
+	width: 100px;
+}
+
+main {
+	overflow: auto; /* Header and footer are sticky, list-of-lists content scrolls if long */
+}
+
+#list_add_new input, #list_item_add_new input {
+	flex-grow: 1;
+}
